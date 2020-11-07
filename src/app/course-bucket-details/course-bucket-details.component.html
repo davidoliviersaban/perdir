@@ -1,0 +1,13 @@
+<div class="bucket">
+  <button class="btn btn-danger" (click)="deleteMe()">x</button>
+  <button class="btn btn-success" (click)="addCourse()">cours</button>
+  <input type="text" class="form-control" [(ngModel)]="courseBucket.nbPupils" maxlength="2" size="2" style="
+  width: 30px;
+  margin-top: -27px;
+  margin-left: 73px;"/>
+  <ul>
+    <li class="row" *ngFor="let course of courseBucket.courseList">
+      <button class="btn  btn-primary" data-toggle="button" aria-pressed="false" (click)="removeCourse(course)">{{course.name}}</button>
+    </li>
+  </ul>
+</div>

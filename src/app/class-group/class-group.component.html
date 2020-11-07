@@ -1,0 +1,13 @@
+<div>
+  <strong>{{ classesGroup.name }}</strong>
+  <span> {{ classesGroup.maxPupils }} eleves max</span>
+  <button class="btn btn-success" (click)="addClassesBucket()">groupe classe</button>
+    <app-course-bucket-details
+    *ngFor="let course_bucket of classesGroup.courseBucketList; index as position"
+    class="grid"
+    [courseBucket]="course_bucket"
+    [position]="position"
+    [groupClassId]="ClassesGroupId"
+    (notify)="removeClassesBucket(position);">
+  </app-course-bucket-details>
+</div>

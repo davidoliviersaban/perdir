@@ -1,0 +1,6 @@
+<button class="btn btn-success" (click)="addClassesGroup()">Nouvelle classe</button>
+<ul>
+  <li *ngFor="let ClassesGroup of ClassesGroupList;">
+    <app-class-group [ClassesGroupId]="ClassesGroup.id"></app-class-group>
+  </li>
+</ul>
