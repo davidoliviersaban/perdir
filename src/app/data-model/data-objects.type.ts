@@ -7,6 +7,10 @@
  * PupilsInCourse is the horizontal split of the class and specialize a group
  */
 
+export interface CompleteDataModel {
+  classesGroupList: ClassesGroup[];
+}
+
 export interface ClassesGroup {
   id?: number;
   name?: string;
@@ -29,5 +33,6 @@ export interface ClassesBucket {
 export interface Course {
   id: number;
   name: string;
+  shortName: string;
   enabled?: boolean;
 }

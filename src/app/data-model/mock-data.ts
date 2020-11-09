@@ -1,11 +1,11 @@
 import { ClassesGroup, Course } from './data-objects.type';
 
 export const MOCK_COURSES: Course[] = [
-  { id: 11, name: 'Anglais' },
-  { id: 12, name: 'Espagnol' },
-  { id: 13, name: 'Italien' },
-  { id: 14, name: 'Latin' },
-  { id: 15, name: 'Allemand' },
+  { id: 11, name: 'Anglais',  shortName: 'ang' },
+  { id: 12, name: 'Espagnol', shortName: 'esp' },
+  { id: 13, name: 'Italien',  shortName: 'ita' },
+  { id: 14, name: 'Latin',    shortName: 'lat' },
+  { id: 15, name: 'Allemand', shortName: 'all' },
 ];
 
 export const MOCK_CLASS_GROUP: ClassesGroup[] = [

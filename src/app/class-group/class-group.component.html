@@ -1,13 +1,18 @@
-<div>
-  <strong>{{ classesGroup.name }}</strong>
-  <span> {{ classesGroup.maxPupils }} eleves max</span>
-  <button class="btn btn-success" (click)="addClassesBucket()">groupe classe</button>
+<div [ngStyle]="getStyle()">
+  <button class="btn btn-danger" (click)="deleteMe()">x</button>
+  <button class="btn btn-success" (click)="addClassesBucket()">+</button>
+  <input class="btn classGroupName" type="text" maxlength="10" (change)="change()" [(ngModel)]="classesGroup.name">
+  <span style="margin-left:1rem;margin-right:1rem;">
+    <input class="btn pupils" type="number" (change)="change()" [(ngModel)]="classesGroup.maxPupils"/>
+    <span> eleves</span>
+  </span>
     <app-course-bucket-details
     *ngFor="let course_bucket of classesGroup.courseBucketList; index as position"
     class="grid"
     [courseBucket]="course_bucket"
     [position]="position"
     [groupClassId]="ClassesGroupId"
-    (notify)="removeClassesBucket(position);">
+    (notifyUpdate)="change();"
+    (notifyRemoval)="removeClassesBucket(position);">
   </app-course-bucket-details>
 </div>

@@ -1,0 +1,270 @@
+{
+  "classesGroupList": [
+    {
+      "name": "6ieme1",
+      "maxPupils": 30,
+      "courseBucketList": [
+        {
+          "nbPupils": 10,
+          "courseList": [
+            {
+              "id": 11,
+              "name": "Anglais",
+              "shortName": "ang",
+              "enabled": true
+            },
+            {
+              "id": 12,
+              "name": "Espagnol",
+              "shortName": "esp",
+              "enabled": true
+            },
+            {
+              "id": 13,
+              "name": "Italien",
+              "shortName": "ita",
+              "enabled": false
+            },
+            {
+              "id": 14,
+              "name": "Latin",
+              "shortName": "lat",
+              "enabled": true
+            },
+            {
+              "id": 15,
+              "name": "Allemand",
+              "shortName": "all",
+              "enabled": false
+            }
+          ]
+        },
+        {
+          "nbPupils": 10,
+          "courseList": [
+            {
+              "id": 11,
+              "name": "Anglais",
+              "shortName": "ang",
+              "enabled": true
+            },
+            {
+              "id": 12,
+              "name": "Espagnol",
+              "shortName": "esp",
+              "enabled": true
+            },
+            {
+              "id": 13,
+              "name": "Italien",
+              "shortName": "ita",
+              "enabled": true
+            },
+            {
+              "id": 14,
+              "name": "Latin",
+              "shortName": "lat",
+              "enabled": true
+            },
+            {
+              "id": 15,
+              "name": "Allemand",
+              "shortName": "all",
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "nbPupils": 10,
+          "courseList": [
+            {
+              "id": 11,
+              "name": "Anglais",
+              "shortName": "ang",
+              "enabled": true
+            },
+            {
+              "id": 12,
+              "name": "Espagnol",
+              "shortName": "esp",
+              "enabled": true
+            },
+            {
+              "id": 13,
+              "name": "Italien",
+              "shortName": "ita",
+              "enabled": true
+            },
+            {
+              "id": 14,
+              "name": "Latin",
+              "shortName": "lat",
+              "enabled": true
+            },
+            {
+              "id": 15,
+              "name": "Allemand",
+              "shortName": "all",
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "nbPupils": 10,
+          "courseList": [
+            {
+              "id": 11,
+              "name": "Anglais",
+              "shortName": "ang",
+              "enabled": true
+            },
+            {
+              "id": 12,
+              "name": "Espagnol",
+              "shortName": "esp",
+              "enabled": true
+            },
+            {
+              "id": 13,
+              "name": "Italien",
+              "shortName": "ita",
+              "enabled": true
+            },
+            {
+              "id": 14,
+              "name": "Latin",
+              "shortName": "lat",
+              "enabled": true
+            },
+            {
+              "id": 15,
+              "name": "Allemand",
+              "shortName": "all",
+              "enabled": true
+            }
+          ]
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "6ieme2",
+      "maxPupils": 30,
+      "courseBucketList": [
+        {
+          "nbPupils": 10,
+          "courseList": [
+            {
+              "id": 11,
+              "name": "Anglais",
+              "shortName": "ang",
+              "enabled": true
+            },
+            {
+              "id": 12,
+              "name": "Espagnol",
+              "shortName": "esp",
+              "enabled": false
+            },
+            {
+              "id": 13,
+              "name": "Italien",
+              "shortName": "ita",
+              "enabled": false
+            },
+            {
+              "id": 14,
+              "name": "Latin",
+              "shortName": "lat",
+              "enabled": false
+            },
+            {
+              "id": 15,
+              "name": "Allemand",
+              "shortName": "all",
+              "enabled": true
+            }
+          ]
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "6e31",
+      "maxPupils": 13,
+      "courseBucketList": [
+        {
+          "nbPupils": 10,
+          "courseList": [
+            {
+              "id": 11,
+              "name": "Anglais",
+              "shortName": "ang",
+              "enabled": true
+            },
+            {
+              "id": 12,
+              "name": "Espagnol",
+              "shortName": "esp",
+              "enabled": true
+            },
+            {
+              "id": 13,
+              "name": "Italien",
+              "shortName": "ita",
+              "enabled": false
+            },
+            {
+              "id": 14,
+              "name": "Latin",
+              "shortName": "lat",
+              "enabled": false
+            },
+            {
+              "id": 15,
+              "name": "Allemand",
+              "shortName": "all",
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "nbPupils": 3,
+          "courseList": [
+            {
+              "id": 11,
+              "name": "Anglais",
+              "shortName": "ang",
+              "enabled": true
+            },
+            {
+              "id": 12,
+              "name": "Espagnol",
+              "shortName": "esp",
+              "enabled": true
+            },
+            {
+              "id": 13,
+              "name": "Italien",
+              "shortName": "ita",
+              "enabled": true
+            },
+            {
+              "id": 14,
+              "name": "Latin",
+              "shortName": "lat",
+              "enabled": true
+            },
+            {
+              "id": 15,
+              "name": "Allemand",
+              "shortName": "all",
+              "enabled": true
+            }
+          ]
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

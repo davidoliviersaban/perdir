@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angular/core';
 import { ClassesGroupService } from '../class-group.service';
 import { CourseService } from '../course.service';
 import { ClassesBucket, Course } from '../data-model/data-objects.type';
@@ -12,7 +12,8 @@ export class ClassesBucketDetailsComponent implements OnInit {
   @Input() courseBucket: ClassesBucket;
   @Input() position: number;
   @Input() groupClassId: number;
-  @Output() notify = new EventEmitter();
+  @Output() notifyRemoval = new EventEmitter();
+  @Output() notifyUpdate = new EventEmitter();
 
   constructor(
     private courseService: CourseService,
@@ -35,20 +36,35 @@ export class ClassesBucketDetailsComponent implements OnInit {
           const course: Course = { ...item };
           course.enabled = true;
           this.courseBucket.courseList.push(course);
+          // console.log(this.stringify(course));
         }
       });
     });
+    this.groupUpdated();
+  }
+
+  getStyle(course): any {
+    // const color = (course.enabled ? '#007bff' : 'grey');
+    return {
+      opacity: course.enabled ? 1 : 0.5,
+      width: '3rem',
+//      backgroundColor: color,
+//      borderColor: color
+    };
+  }
+
+  groupUpdated(): void {
+    this.notifyUpdate.emit();
   }
 
   removeCourse(course: Course): void {
-    this.courseBucket.courseList = this.courseBucket.courseList.filter(c => c.id !== course.id);
+    course.enabled = !course.enabled;
+    this.groupUpdated();
+    // this.courseBucket.courseList = this.courseBucket.courseList.filter(c => c.id !== course.id);
   }
 
   deleteMe(): void {
-    this.notify.emit();
+    this.notifyRemoval.emit();
   }
 
-  stringify(object): string {
-    return JSON.stringify(object);
-  }
 }

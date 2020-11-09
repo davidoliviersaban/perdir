@@ -1,6 +1,14 @@
-<button class="btn btn-success" (click)="addClassesGroup()">Nouvelle classe</button>
-<ul>
-  <li *ngFor="let ClassesGroup of ClassesGroupList;">
-    <app-class-group [ClassesGroupId]="ClassesGroup.id"></app-class-group>
+<div>
+  <!-- <button class="btn btn-primary" (click)="download()">DOWNLOAD</button> -->
+  <div class="form-group">
+    <label for="file">File</label>
+    <!-- <input type="file" class="form-control" (change)="upload($event)"/> -->
+</div>
+</div>
+<button class="btn btn-success" (click)="add()">Creer une classe</button>
+<h4>{{countPupils()}} Eleves dans le niveau</h4>
+<ul class="classGroup">
+  <li *ngFor="let classesGroup of classesGroupList;" style="margin-left: -2rem;">
+    <app-class-group [ClassesGroupId]="classesGroup.id" (notify)="removeGroup(classesGroup)"></app-class-group>
   </li>
 </ul>
